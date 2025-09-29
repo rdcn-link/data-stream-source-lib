@@ -32,5 +32,37 @@
       <artifactId>dftp-common</artifactId>
       <version>0.5.0-20250928</version>
     </dependency>
+    <dependency>
+      <groupId>edu.ucar</groupId>
+      <artifactId>cdm</artifactId>
+      <version>4.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>edu.ucar</groupId>
+      <artifactId>netcdf4</artifactId>
+      <version>4.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>edu.ucar</groupId>
+      <artifactId>bufr</artifactId>
+      <version>3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-params</artifactId>
+      <version>5.13.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.kimchi</groupId>
+      <artifactId>cisd-jhdf5-core</artifactId>
+      <version>13.06.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.jhdf</groupId>
+      <artifactId>jhdf</artifactId>
+      <version>0.5.8</version>
+    </dependency>
   </dependencies>
 </project>
