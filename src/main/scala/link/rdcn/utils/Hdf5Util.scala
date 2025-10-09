@@ -1,18 +1,17 @@
 package link.rdcn.utils
 
 import io.jhdf.api.{Dataset, Node}
+import io.jhdf.HdfFile
+import io.jhdf.api.Dataset
+import io.jhdf.api.Node
 import link.rdcn.struct.{ClosableIterator, DataStreamSource, Row, StructType}
 
-import scala.reflect.ClassTag
+import java.util.{Map => JMap}
+import scala.collection.JavaConverters._
 
-class Hdf5Util {
+object Hdf5Util {
 
   def hdf5(hdf5Path: String): DataStreamSource = {
-    import io.jhdf.HdfFile
-    import io.jhdf.api.Dataset
-    import io.jhdf.api.Node
-    import java.util.{Map => JMap}
-    import scala.collection.JavaConverters._
 
     val hdfFile = new HdfFile(new java.io.File(hdf5Path))
 

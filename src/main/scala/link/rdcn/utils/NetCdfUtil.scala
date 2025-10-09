@@ -2,12 +2,12 @@ package link.rdcn.utils
 
 import link.rdcn.struct.{ClosableIterator, DataStreamSource, Row, StructType}
 
-class NetCdfUtil {
+import ucar.nc2.dataset.NetcdfDataset
+import scala.collection.JavaConverters._
+
+object NetCdfUtil {
 
   def netcdf(netcdfPath: String): DataStreamSource = {
-    import ucar.nc2.dataset.NetcdfDataset
-    import scala.collection.JavaConverters._
-
     val netcdfFile = NetcdfDataset.openDataset(netcdfPath)
 
     // 获取所有变量
